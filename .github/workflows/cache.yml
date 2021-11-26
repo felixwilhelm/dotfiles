@@ -17,9 +17,8 @@ jobs:
         key: primes
 
     - name: Generate Prime Numbers
-      if: steps.cache-primes.outputs.cache-hit != 'true'
       run: | 
-        echo 10 > prime-numbers
+        cat README > prime-numbers
         echo "generating"
 
     - name: Use Prime Numbers
