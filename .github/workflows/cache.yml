@@ -16,10 +16,5 @@ jobs:
         path: prime-numbers
         key: primes
 
-    - name: Generate Prime Numbers
-      run: | 
-        cat README.md > prime-numbers
-        echo "generating"
-
     - name: Use Prime Numbers
       run: cat prime-numbers
