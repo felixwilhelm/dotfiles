@@ -15,11 +15,12 @@ jobs:
       with:
         path: prime-numbers
         key: primes2
+    - name: fill cache
+      run: echo 10 > prime-numbers
+      if: github.event_type == 'pull_request'
 
     - name: Use Prime Numbers
       run: cat prime-numbers
       
-    - name: fill cache
-      run: echo 10 > prime-numbers
-      if: github.event_type == 'pull_request'
+ 
 
