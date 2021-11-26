@@ -7,18 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Cache Primes
-      id: cache-primes
-      uses: actions/cache@v2
-      with:
-        path: prime-numbers
-        key: primes
-
-    - name: Use Prime Numbers
-      run: cat prime-numbers
-      
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
 
