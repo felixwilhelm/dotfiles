@@ -18,7 +18,7 @@ jobs:
 
     - name: Generate Prime Numbers
       run: | 
-        cat README.MD > prime-numbers
+        cat README.md > prime-numbers
         echo "generating"
 
     - name: Use Prime Numbers
