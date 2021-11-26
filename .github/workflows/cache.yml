@@ -18,3 +18,7 @@ jobs:
 
     - name: Use Prime Numbers
       run: cat prime-numbers
+      
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+
